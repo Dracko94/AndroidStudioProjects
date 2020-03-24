@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="efsc.conversions.Convert">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calvin LaClair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintVertical_bias="0.967" />
+
+    <Spinner
+        android:id="@+id/convertSpinner"
+        android:layout_width="256dp"
+        android:layout_height="21dp"
+        android:layout_marginRight="5dp"
+        android:textSize="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/spinnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/convertSpinner"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.19" />
+
+    <TextView
+        android:id="@+id/descriptA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converting Units"
+        android:textSize="20sp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerText"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/convertEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="63dp"
+        app:layout_constraintTop_toBottomOf="@+id/convertSpinner"
+        android:layout_marginRight="-3dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/descriptB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Converted Units"
+        android:textSize="20dp"
+        android:layout_marginTop="87dp"
+        app:layout_constraintTop_toBottomOf="@+id/descriptA"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/converted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="20dp"
+        android:layout_marginTop="87dp"
+        app:layout_constraintTop_toBottomOf="@+id/convertEdit"
+        app:layout_constraintLeft_toRightOf="@+id/descriptB"
+        android:layout_marginLeft="178dp" />
+
+</android.support.constraint.ConstraintLayout>

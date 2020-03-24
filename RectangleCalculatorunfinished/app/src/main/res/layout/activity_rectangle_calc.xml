@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project1.rectanglecalculator.RectangleCalcActivity">
+
+    <TextView
+        android:id="@+id/width"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Width"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="54dp"
+        tools:text="Width" />
+
+    <EditText
+        android:layout_width="238dp"
+        android:layout_height="37dp"
+        tools:layout_editor_absoluteY="34dp"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="44dp"
+        android:layout_height="17dp"
+        android:text="Height"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:text="Height" />
+
+    <EditText
+        android:layout_width="238dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteY="71dp"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <TextView
+        android:id="@+id/area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="171dp"
+        tools:text="Area" />
+
+    <TextView
+        android:id="@+id/perimeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perimeter"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="223dp"
+        tools:text="Perimeter" />
+
+    <TextView
+        android:id="@+id/perimeterResult"
+        android:layout_width="240dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteY="145dp"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="240dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="197dp" />
+
+</android.support.constraint.ConstraintLayout>

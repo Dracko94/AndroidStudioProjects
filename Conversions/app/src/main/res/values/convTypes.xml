@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string-array name="conv_Types">
+            <item>Miles to Kilometers</item>
+            <item>Kilometers to Miles</item>
+            <item>Inches to Centimeters</item>
+            <item>Centimeters to Inches</item>
+        </string-array>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.efsc.calvin.playersapp.GameEmulator">
+
+    <Button
+        android:id="@+id/tie"
+        android:layout_width="239dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="87dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/tie"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/emuPlayer1"
+        android:layout_width="135dp"
+        android:layout_height="29dp"
+        android:text="@string/emuPlayer1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/emuPlayer2"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.195"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tie"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/emuPlayer2"
+        android:layout_width="127dp"
+        android:layout_height="28dp"
+        android:text="@string/emuPlayer2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tie"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/player1Win"
+        android:layout_width="179dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/player1Win"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tie"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/player2Win"
+        android:layout_width="180dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/player2Win"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tie"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
